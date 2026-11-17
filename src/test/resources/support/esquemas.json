@@ -1,0 +1,31 @@
+{
+  "usuario": {
+    "_id": "#string? _.length > 0",
+    "nome": "#string",
+    "email": "#string? _.includes('@')",
+    "password": "#string",
+    "administrador": "#? _ == 'true' || _ == 'false'"
+  },
+  "creado": {
+    "message": "Cadastro realizado com sucesso",
+    "_id": "#string? _.length > 0"
+  },
+  "actualizado": {
+    "message": "Registro alterado com sucesso"
+  },
+  "duplicado": {
+    "message": "Este email já está sendo usado"
+  },
+  "ausente": {
+    "message": "Usuário não encontrado"
+  },
+  "eliminado": {
+    "message": "Registro excluído com sucesso"
+  },
+  "sinRegistro": {
+    "message": "Nenhum registro excluído"
+  },
+  "emailInvalido": {
+    "email": "#string? _.length > 0"
+  }
+}
